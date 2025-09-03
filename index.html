@@ -1,338 +1,254 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Potsawee Manakul (Punpun)</title>
+        <title>Potsawee Manakul (Punpun)</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="blog, accent, , Researcher, jekyll">
-    <meta name="author" content="">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="blog, accent, , Researcher, jekyll">
+        <meta name="author" content="">
 
-
-
-    <meta name="description" content="">
-    <link href='https://fonts.googleapis.com/css?family="Helvetica Neue"' rel='stylesheet' type='text/css'>
-    <link rel="alternate" type="application/rss+xml" title="Researcher RSS" href="/feed.xml" />
-    <link rel="stylesheet" href="css/main.css">
-
-
+        <meta name="description" content="">
+        <link href='https://fonts.googleapis.com/css?family="Helvetica Neue"' rel='stylesheet' type='text/css'>
+        <link rel="alternate" type="application/rss+xml" title="Researcher RSS" href="/feed.xml" />
+        <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <div class="wrapper">
+        <div class="wrapper">
+                <div class="navbar container">
+                        <a id="author-name" class="alignable pull-left" href="">Potsawee Manakul (Punpun)</a>
+                        <br>
+                        <br>
+                        <ul id="navlist" class="alignable pull-left navbar-ul"
+                                style="margin-left: 0px; margin-top: 10px;">
+                                <li class="alignable pull-left nav-list" style="margin-left: 0px;"><a target="_blank"
+                                                href="pdfs/CV.pdf">CV </a>
+                                        |
+                                <li class="alignable pull-left nav-list"><a
+                                                href="https://scholar.google.com/citations?hl=en&user=dVgn6boAAAAJ">Google
+                                                Scholar</a>
+                                        |
+                                </li>
+                                <li class="alignable pull-left nav-list"><a
+                                                href="https://github.com/potsawee">GitHub</a>
+                                        |
+                                <li class="alignable pull-left nav-list"><a
+                                                href="https://huggingface.co/potsawee">HuggingFace</a>
+                                        |
+                                </li>
+                                <li class="alignable pull-left nav-list"><a href="#contact">Contact</a>
+                                </li>
+                        </ul>
+                </div>
+                <div style="clear:both"></div>
 
-        <div class="navbar container">
-
-            <a id="author-name" class="alignable pull-left" href="">Potsawee Manakul (Punpun)</a>
-            <br>
-            <br>
-            <ul id="navlist" class="alignable pull-left navbar-ul" style="margin-left: 0px; margin-top: 10px;">
+                <hr>
+                <div class="container content">
+                        <h2 id="about-me">About Me</h2>
+                        <p><img class="profile-picture" src="images/potsawee.jpg" /></p>
 
 
-                        <li class="alignable pull-left nav-list" style="margin-left: 0px;"><a target="_blank" href="pdfs/CV.pdf">CV </a>
-                        |
-                        <li class="alignable pull-left nav-list"><a href="https://scholar.google.com/citations?hl=en&user=dVgn6boAAAAJ">Google Scholar</a>
-                        |
-                        </li>
-                        <li class="alignable pull-left nav-list"><a href="https://github.com/potsawee">GitHub</a>
-                        |
-                        <li class="alignable pull-left nav-list"><a href="https://huggingface.co/potsawee">HuggingFace</a>
-                        |
-                        </li>
-                        <li class="alignable pull-left nav-list"><a href="#contact">Contact</a>
-                        </li>
 
-            </ul>
+                        <p>Hello, I'm Punpun! I am currently an <a href="https://hai.stanford.edu/">HAI</a> visiting
+                                scholar at the <a href="https://nlp.stanford.edu/">Stanford NLP Group</a>, working on
+                                mulitmodal (audio/speech) LLM research with <a
+                                        href="https://cs.stanford.edu/~diyiy/">Diyi Yang</a>.</p>
+
+                        <p>I am also a founding team member of <a href="https://opentyphoon.ai/">Typhoon</a>, an AI lab
+                                supported by <a href="https://www.scb10x.com/">SCB 10X</a> to advance Thai AI models
+                                (e.g., LLM, ASR, TTS), where I currently focus on audio/speech models.</p>
+
+                        <p>I completed my PhD in May 2024 from the University of Cambridge, supervised by <a
+                                        href="http://mi.eng.cam.ac.uk/~mjfg/">Mark Gales</a> on summarization and
+                                factual consistency of NLG. Previously, I had a research internship at Amazon, and I
+                                hold a B.A. and an M.Eng. from the University of Cambridge.</p>
+
+                        <p></p>
+
+                        <h2 id="projects">Recent Projects</h2>
+
+                        <p>My recent projects cover the following themes:</p>
+
+                        <ul>
+                                <li style="margin-bottom: 12px;"><span style="font-weight: 500;">Multimodal, Audio, Speech</span>: <a href="https://arxiv.org/abs/2507.12705">AudioJudge</a>, <a href="https://talkarena.org/">TalkArena</a>, <a href="https://arxiv.org/abs/2409.10999">Low-Resource AudioLLM</a>, <a href="https://arxiv.org/abs/2307.04172">ASR Error Correction with LLM</a></li>
+                                <li style="margin-bottom: 12px;"><span style="font-weight: 500;">NLG Evaluation, Factuality, AI Safety</span>: <a href="https://github.com/potsawee/selfcheckgpt">SelfCheckGPT</a>, <a href="https://arxiv.org/abs/2405.13684">CrossCheckGPT</a>, <a href="https://arxiv.org/abs/2301.12307">MQAG</a>, <a href="https://arxiv.org/abs/2307.07889">LLM Comparative Assessment</a>, <a href="https://arxiv.org/abs/2410.10215">SkillAggregation</a>, <a href="https://arxiv.org/abs/2505.02884">Unlearning vs. Obfuscation</a>
+                                <li style="margin-bottom: 12px;"><span style="font-weight: 500;">Typhoon Project</span> <a href="https://opentyphoon.ai/">(opentyphoon.ai)</a>: Typhoon-TTS, Typhoon2-Audio, Typhoon2-LLM, Typhoon-Audio, Typhoon-LLM, <a href="https://crfm.stanford.edu/2024/09/04/thaiexam.html">Thai-HELM</a></li>
+                                
+                        </ul>
+
+                        <h2 id="recent">News</h2>
+                        <ul>
+                        <li>[2025/08] EMNLP 2025: <a href="https://arxiv.org/abs/2505.02884">Unlearning vs. Obfuscation</a> (main); <a href="https://arxiv.org/abs/2505.14157">Prior Prompt for RFT</a> (main)</li>
+                        <li>[2025/07] Start at Stanford NLP as a visiting scholar</li>
+                        <li>[2025/05] Interspeech 2025: <a href="https://arxiv.org/abs/2409.10999">Typhoon-Audio</a> is accepted</a></li>
+                        <li>[2025/05] ACL 2025: <a href="https://arxiv.org/abs/2410.10215">SkillAggregation</a> (main), <a href="https://arxiv.org/abs/2502.15919">TalkArena</a> (main); <a href="https://arxiv.org/abs/2502.17956">xPoT</a> (findings)</a></li>
+                        <li>[2025/02] We released Typhoon Reasoning: <a href="https://arxiv.org/abs/2502.09042" style="color: black">T1 (long-though SFT)</a> & <a href="https://arxiv.org/abs/2502.09056" style="color: black">R1 (Merging)</a> </li>
+                        <li>[2024/12] <a href="https://arxiv.org/abs/2412.13702" style="color: black"> We released 🌪️ Typhoon 2</a> || <a href="https://huggingface.co/collections/scb10x/typhoon-2-text-675e58b48747ba8659895538">Text Models</a> & <a href="https://huggingface.co/collections/scb10x/typhoon-2-multimodal-675e59368326ac2328c8210f">Multimodal Models</a></li>
+                        <li>[2024/09] EMNLP 2024: 2*main + 1*findings as a co-author</a></li>
+                        <li>[2024/09] <a href="https://crfm.stanford.edu/2024/09/04/thaiexam.html" style="color: black">We released ThaiExam in HELM (w/ Stanford CRFM)</a></li>
+                        <li>[2024/08] <a href="https://www.sec.gov/" style="color: black">Speak at AI CoP Seminar @ the U.S. SEC on LLM Hallucination</a></li>
+                        <li>[2024/08] <a href="https://connect.aisingapore.org/2024/09/breaking-barriers-building-bridges-increasing-language-representation-in-southeast-asia/" style="color: black">Speak at 3rd SEA Language Summit on Multimodal LLM</a></li>
+                        <li>[2024/08] We released 🌪️ Typhoon Multimodal: <a href="https://blog.opentyphoon.ai/typhoon-audio-preview-release-6fbb3f938287">Audio Model</a> & <a href="https://blog.opentyphoon.ai/typhoon-vision-preview-release-0bdef028ca55">Vision Model </a></li>
+                        <li>[2024/07] <a href="https://www.set.or.th/en/home" style="color: black">Speak  at the Stock Exchange of Thailand (SET) on Thai LLM</a></li>
+                        </ul>
+
+
+                        <h2 id="publications">Selected Publications</h2>
+
+                        <a href="https://scholar.google.com/citations?user=dVgn6boAAAAJ" style="color:black"
+                                target="_blank">A complete list of publications is available on Google Scholar</a>
+                        <ul>
+                                <li style="margin-bottom: 15px;">
+                                        <a href="https://arxiv.org/abs/2409.10999">Enhancing Low-Resource Language and
+                                                Instruction Following Capabilities of Audio Language Models</a>
+                                        <br>
+                                        <u>Potsawee Manakul</u>, Guangzhi Sun, Warit Sirichotedumrong, Kasima
+                                        Tharnpipitchai, Kunat Pipatanakul
+                                        <br>
+                                        <span style="font-weight: 500;">Interspeech 2025</span>
+                                        <a href="https://github.com/scb-10x/typhoon2-audio/"
+                                                style="color: black">[project page]</a>
+                                </li>
+                                <!-- <li style="margin-bottom: 15px;">
+                                        <a href="https://arxiv.org/abs/2405.13684">CrossCheckGPT: Universal
+                                                Hallucination Ranking for Multimodal Foundation Models</a>
+                                        <br>
+                                        Guangzhi Sun*, <u>Potsawee Manakul</u>*, Adian Liusie, Kunat Pipatanakul, Chao
+                                        Zhang, Phil Woodland, Mark Gales
+                                        <br>
+                                        arXiv 2024, *Equal contribution
+                                        <a href="https://huggingface.co/spaces/scb10x/multimodal-hallucination-leaderboard"
+                                                style="color: black">[multimodal hallucination leaderboard]</a>
+                                </li> -->
+
+                                <li style="margin-bottom: 15px;">
+                                        <a href="https://arxiv.org/abs/2303.08896">SelfCheckGPT: Zero-Resource Black-Box
+                                                Hallucination Detection for Generative Large Language Models</a>
+                                        <br>
+                                        <u>Potsawee Manakul</u>, Adian Liusie, Mark Gales
+                                        <br>
+                                        <span style="font-weight: 500;">EMNLP 2023</span>
+                                        <a href="https://github.com/potsawee/selfcheckgpt" style="color: black">[project
+                                                page]</a>
+                                        <br>
+                                        <a href="https://wapo.st/3IMgiZw" , style="color:dimgray">→ Featured in the
+                                                Washington Post about AI Hallucination in May 2023</a>
+                                        <br>
+                                        <a href="https://www.deeplearning.ai/short-courses/quality-safety-llm-applications"
+                                                , style="color:dimgray">→ Featured in deeplearning.ai short course on
+                                                LLM safety</a>
+                                        <br>
+                                        <a href="https://web.stanford.edu/class/cs329t/syllabus.html" ,
+                                                style="color:dimgray">→ Featured in reading list of Stanford CS 329T:
+                                                Trustworthy Machine Learning (Fall 2023)</a>
+                                        <br>
+                                        <a href="https://mlcollective.org/dlct/" , style="color:dimgray">→ Invited talk
+                                                at ML Collective - Deep Learning: Classics and Trends (DLCT) in August
+                                                2023</a>
+                                        <br>
+                                        <a href="https://www.sec.gov/" , style="color:dimgray">→ Invited talk at at AI
+                                                CoP Seminar @ the U.S. SEC on LLM Hallucination in August 2024</a>
+                                        <br>
+                                        <a href="https://huggingface.co/blog/dhuynh95/automatic-hallucination-detection"
+                                                , style="color:dimgray">→ Featured in an analysis by Daniel Huynh (from
+                                                Mithril Security) on SelfCheckGPT</a>
+
+                                </li>
+                                <li style="margin-bottom: 15px;">
+                                        <a href="https://arxiv.org/abs/2301.12307">MQAG: Multiple-choice Question
+                                                Answering and Generation for Assessing Information Consistency in
+                                                Summarization</a>
+                                        <br>
+                                        <u>Potsawee Manakul</u>, Adian Liusie, Mark Gales
+                                        <br>
+                                        <span style="font-weight: 500;">AACL 2023</span>
+                                        <a href="https://github.com/potsawee/mqag0" style="color: black">[code]</a>
+                                        <br>
+                                        <strong, style="color:dimgray">→ Area Chair Paper Award (Generation and
+                                                Summarization)</strong>
+                                </li>
+
+                                <li style="margin-bottom: 15px;">
+                                        <a href="https://aclanthology.org/2021.acl-long.470/">Long-Span Summarization
+                                                via Local Attention and Content Selection</a>
+                                        <br>
+                                        <u>Potsawee Manakul</u>, Mark Gales
+                                        <br>
+                                        <span style="font-weight: 500;">ACL 2021</span>
+                                        <!-- <a href="https://arxiv.org/abs/2105.03801">[arXiv]</a> -->
+                                        <a href="https://github.com/potsawee/longsum0" style="color: black">[code]</a>
+                                        <br>
+                                        <a href="https://podcastsdataset.byspotify.com/" , style="color:dimgray">→
+                                                System winning 1st place in the Spotify Podcast Summarisation task
+                                                2020</a>
+
+                                </li>
+
+                                <li style="margin-bottom: 15px;">
+                                        <a
+                                                href="https://www.isca-speech.org/archive/interspeech_2020/manakul20_interspeech.html">Abstractive
+                                                Spoken Document Summarization using Hierarchical Model with Multi-stage
+                                                Attention Diversity Optimization</a>
+                                        <br>
+                                        <u>Potsawee Manakul</u>, Mark J. F. Gales, Linlin Wang
+                                        <br>
+                                        <span style="font-weight: 500;">Interspeech 2020</span>
+                                        <a href="https://github.com/potsawee/spoken_summ_div"
+                                                style="color: black">[code]</a>
+                                        <br>
+                                        <strong, style="color:dimgray">→ Best Student Paper Award Finalist</strong>
+                                                <br>
+                                </li>
+                        </ul>
+
+                        <hr />
+                        <!-- <h2 id="activity">Professional Activities</h2> -->
+                        <h3 id="honours">Honours and Awards</h3>
+                        <ul>
+                                <li>AACL 2023 Area Chair Paper Award</li>
+                                <li>InterSpeech 2020 Best Student Paper Finalist</li>
+                                <li>Cambridge International & St John's College Scholarship (2019)</li>
+                                <li>BP 1st Year Prize: top 1% in 1st-year Cambridge Engineering (2016)</li>
+                                <li>Thai Government Scholarship (2015)</li>
+                                <li>Silver Medalist at IPhO 2014; Gold Medalist at APhO 2014</li>
+                        </ul>
+                        <h3 id="reviwer">Service</h3>
+                        <ul>
+                                <li>Area Chair: ACL 2025</li>
+                                <li>ACL Rolling Review: 2024 (Feb, Apr, Jun, Oct, Dec), 2025 (Jul) </li>
+                                <li>NeurIPS: 2023, 2024, 2025</li>
+                                <li>ICLR: 2024, 2025</li>
+                                <li>ICML: 2023, 2024, 2025</li>
+                                <li>AAAI: 2025</li>
+                                <li>Interspeech: 2023, 2024, 2025</li>
+                                <li>Conference On Language Modeling (COLM): 2024, 2025</li>
+                                <li>IEEE Transactions on Audio, Speech, and Language Processing: 2022, 2023, 2024, 2025
+                                </li>
+                        </ul>
+
+                        <hr />
+
+                        <h2 id="contact">Contact</h2>
+                        <ul>
+                                <li><strong>Email</strong>: potsawee@stanford.edu</li>
+                                <!-- <li><strong>Email</strong>: m.potsawee-at-gmail.com</li> -->
+                                <!-- <li><strong>Address</strong>: St John's College, St John's Street, Cambridge, CB2 1TP, United Kingdom</li> -->
+                        </ul>
+
+                        <hr />
+
+                        <!-- <p style="text-align: center; margin-bottom: 10px"> -->
+                        <!-- <a href="https://github.com/ankitsultana" style="color: dimgray"><small>Page design by Ankit Sultana</small></a> -->
+                        <!-- </p> -->
+
+                        <!-- Tracking -->
+                        <a href='https://clustrmaps.com/site/1bjxf' title='Visit tracker'><img
+                                        style="height: 0px;width: 0px;  margin-left: auto; margin-right: auto; display: block;"
+                                        src='https://clustrmaps.com/map_v2.png?cl=bdbdbd&w=180&t=n&d=H9-CpJ0JXgcgvjxD8q_jUzgZnCCW1mLaWsJuJYPoQnE&co=ffffff&ct=333333' /></a>
+                </div>
         </div>
-        <div style="clear:both"></div>
-
-
-
-
-        <hr>
-
-            <div class="container content">
-
-                <h2 id="about-me">About Me</h2>
-
-<p><img class="profile-picture" src="images/potsawee.jpg" /></p>
-
-
-
-<p>Hello, I'm Punpun! I am currently an <a href="https://hai.stanford.edu/">HAI</a> visiting scholar at the <a href="https://nlp.stanford.edu/">Stanford NLP Group</a>, working on audio research with <a href="https://cs.stanford.edu/~diyiy/">Diyi Yang</a>.</p>
-
-<p>I am also a founding team member of <a href="https://opentyphoon.ai/">Typhoon</a>, an AI lab supported by <a href="https://www.scb10x.com/">SCB 10X</a> to advance Thai AI models (e.g., LLM, ASR, TTS), where I currently focus on audio models.</p>
-
-<p>I hold a PhD in Information Engineering (NLP) from the University of Cambridge, supervised by <a href="http://mi.eng.cam.ac.uk/~mjfg/">Mark Gales</a>, with a research focus on summarization and NLP evaluation. I publish mostly in NLP and speech conferences (ACL, EMNLP, *ACL, Interspeech, ICASSP).</p>
-
-<p>Previously, I had a research internship at Amazon. I also hold a B.A. and an M.Eng. in Information and Computer Engineering from the University of Cambridge.</p>
-
-
-<h2 id="recent">News</h2>
-<ul>
-   <li>05/2025 [Conference] Interspeech 2025: <a href="https://arxiv.org/abs/2409.10999">Typhoon-Audio</a> is accepted</a></li>
-   <li>05/2025 [Conference] ACL 2025: <a href="https://arxiv.org/abs/2410.10215">SkillAggregation</a> (main), <a href="https://arxiv.org/abs/2502.15919">TalkArena</a> (main); <a href="https://arxiv.org/abs/2502.17956">xPoT</a> (findings)</a></li>
-
-   <li>02/2025 [Model] Our Typhoon Reasoning: <a href="https://arxiv.org/abs/2502.09042" style="color: black">T1 (long-though SFT)</a> & <a href="https://arxiv.org/abs/2502.09056" style="color: black">R1 (Merging)</a> </li>
-   <li>12/2024 <a href="https://arxiv.org/abs/2412.13702" style="color: black">[Model] We released 🌪️ Typhoon 2</a> || <a href="https://huggingface.co/collections/scb10x/typhoon-2-text-675e58b48747ba8659895538">Text Models</a> & <a href="https://huggingface.co/collections/scb10x/typhoon-2-multimodal-675e59368326ac2328c8210f">Multimodal Models</a></li>
-   <!-- <li>10/2024 <a href="https://arxiv.org/abs/2410.10215" style="color: black">[Preprint] SkillAggregation: Reference-free LLM-Dependent Aggregation</a></li> -->
-   <li>09/2024 [Conference] EMNLP 2024: 2*main + 1*findings as a co-author</a></li>
-   <!-- <li>09/2024 <a href="https://arxiv.org/abs/2409.10999" style="color: black">[Preprint] Enhancing low-resource & instruction following of audio LMs</a></li> -->
-   <!-- <li>09/2024 <a href="https://huggingface.co/spaces/ThaiLLM-Leaderboard/leaderboard" style="color: black">[Leaderboard] We released the Thai LLM Leaderboard (w/ VISTEC)</a></li> -->
-   <li>09/2024 <a href="https://crfm.stanford.edu/2024/09/04/thaiexam.html" style="color: black">[Leaderboard] We released ThaiExam in HELM (w/ Stanford CRFM)</a></li>
-   <li>08/2024 <a href="https://www.sec.gov/" style="color: black">[Talk] Speak at AI CoP Seminar @ the U.S. SEC on LLM Hallucination</a></li>
-   <li>08/2024 <a href="https://connect.aisingapore.org/2024/09/breaking-barriers-building-bridges-increasing-language-representation-in-southeast-asia/" style="color: black">[Talk] Speak at 3rd SEA Language Summit on Multimodal LLM</a></li>
-   <li>08/2024 [Model] We released 🌪️ Typhoon Multimodal: <a href="https://blog.opentyphoon.ai/typhoon-audio-preview-release-6fbb3f938287">Audio Model</a> & <a href="https://blog.opentyphoon.ai/typhoon-vision-preview-release-0bdef028ca55">Vision Model </a></li>
-   <li>07/2024 <a href="https://www.set.or.th/en/home" style="color: black">[Talk] Speak  at the Stock Exchange of Thailand (SET) on Thai LLM</a></li>
-</ul>
-
-
-<h2 id="publications">Selected Publications</h2>
-
-<!-- <a href="https://scholar.google.com/citations?user=dVgn6boAAAAJ" target="_blank">
-<img src="https://img.shields.io/badge/dynamic/json?label=Paper%20Citations&amp;query=total_citations&amp;url=https%3A%2F%2Fcse.bth.se%2F~fer%2Fgooglescholar-api%2Fgooglescholar.php%3Fuser%3DdVgn6boAAAAJ&amp;logo=googlescholar&amp;style=social"
-alt="Google Scholar" style="width: auto; height: 20px; vertical-align: middle; padding-bottom: 3px">
-</a> -->
-<a href="https://scholar.google.com/citations?user=dVgn6boAAAAJ" style="color:black" target="_blank">A complete list of publications is available on Google Scholar</a>
-<ul >
-        <li style="margin-bottom: 15px;">
-                <a href="https://arxiv.org/abs/2409.10999">Enhancing Low-Resource Language and Instruction Following Capabilities of Audio Language Models</a>
-                <br>
-                <u>Potsawee Manakul</u>, Guangzhi Sun, Warit Sirichotedumrong, Kasima Tharnpipitchai, Kunat Pipatanakul
-                <br>
-                <span style="font-weight: 500;">Interspeech 2025</span>
-                <a href="https://github.com/scb-10x/typhoon2-audio/" style="color: black">[project page]</a>
-        </li>
-        <li style="margin-bottom: 15px;">
-                <a href="https://arxiv.org/abs/2410.10215">SkillAggregation: Reference-free LLM-Dependent Aggregation</a>
-                <br>
-                Guangzhi Sun, Anmol Kagrecha, <u>Potsawee Manakul</u>, Phil Woodland, Mark Gales
-                <br>
-                <span style="font-weight: 500;">ACL 2025</span> (main)
-        </li> 
-        <li style="margin-bottom: 15px;">
-                <a href="https://arxiv.org/abs/2405.13684">CrossCheckGPT: Universal Hallucination Ranking for Multimodal Foundation Models</a>
-                <br>
-                Guangzhi Sun*, <u>Potsawee Manakul</u>*, Adian Liusie, Kunat Pipatanakul, Chao Zhang, Phil Woodland, Mark Gales
-                <br>
-                <span style="font-weight: 500;">NeurIPS 2024 Workshop</span> on Responsibly Building the Next Generation of Multimodal Foundational Models (RBFM). *Equal contribution
-                <a href="https://huggingface.co/spaces/scb10x/multimodal-hallucination-leaderboard" style="color: black">[multimodal hallucination leaderboard]</a>
-        </li>
-
-  <li style="margin-bottom: 15px;">
-          <a href="https://arxiv.org/abs/2307.07889">LLM Comparative Assessment: Zero-shot NLG Evaluation through Pairwise Comparisons using Large Language Models</a>
-          <br>
-          Adian Liusie, <u>Potsawee Manakul</u>, Mark Gales
-          <br>
-          <span style="font-weight: 500;">EACL 2024</span> (main)
-          <a href="https://github.com/adianliusie/comparative-assessment" style="color: black">[code]</a>
-  </li>
-
-    <li style="margin-bottom: 15px;">
-            <a href="https://arxiv.org/abs/2303.08896">SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models</a>
-            <br>
-            <u>Potsawee Manakul</u>, Adian Liusie, Mark Gales
-            <br>
-            <span style="font-weight: 500;">EMNLP 2023</span> (main)
-            <a href="https://github.com/potsawee/selfcheckgpt" style="color: black">[project page]</a>
-            <br>
-            <a href="https://wapo.st/3IMgiZw", style="color:dimgray">→ Featured in the Washington Post about AI Hallucination in May 2023</a>
-            <br>
-            <a href="https://www.deeplearning.ai/short-courses/quality-safety-llm-applications", style="color:dimgray">→ Featured in deeplearning.ai short course on LLM safety</a>
-            <br>
-            <a href="https://web.stanford.edu/class/cs329t/syllabus.html", style="color:dimgray">→ Featured in reading list of Stanford CS 329T: Trustworthy Machine Learning (Fall 2023)</a>
-            <br>
-            <a href="https://mlcollective.org/dlct/", style="color:dimgray">→ Invited talk at ML Collective - Deep Learning: Classics and Trends (DLCT) in August 2023</a>
-            <br>
-            <a href="https://www.sec.gov/", style="color:dimgray">→ Invited talk at at AI CoP Seminar @ the U.S. SEC on LLM Hallucination in August 2024</a>
-            <br>
-            <a href="https://huggingface.co/blog/dhuynh95/automatic-hallucination-detection", style="color:dimgray">→ Featured in an analysis by Daniel Huynh (from Mithril Security) on SelfCheckGPT</a>
-
-    </li>
-    <li style="margin-bottom: 15px;">
-            <a href="https://arxiv.org/abs/2301.12307">MQAG: Multiple-choice Question Answering and Generation for Assessing Information Consistency in Summarization</a>
-            <br>
-            <u>Potsawee Manakul</u>, Adian Liusie, Mark Gales
-            <br>
-            <span style="font-weight: 500;">AACL 2023</span> (main)
-            <a href="https://github.com/potsawee/mqag0" style="color: black">[code]</a>
-            <br>
-            <strong, style="color:dimgray">→ Area Chair Paper Award (Generation and Summarization)</strong>
-    </li>
-    <!-- <li style="margin-bottom: 15px;">
-            <a href="https://arxiv.org/abs/2309.04992">Mitigating Word Bias in Zero-shot Prompt-based Classifiers</a>
-            <br>
-            Adian Liusie, <u>Potsawee Manakul</u>, Mark Gales
-            <br>
-            <span style="font-weight: 500;">Findings of AACL 2023</span>
-            <a href="https://github.com/adianliusie/robust-prompt-classifier" style="color: black">[code]</a>
-    </li> -->
-    <!-- <li style="margin-bottom: 15px;">
-            <a href="https://aclanthology.org/2023.bionlp-1.51/">CUED at ProbSum 2023: Hierarchical Ensemble of Summarization Models</a>
-            <br>
-            <u>Potsawee Manakul</u>, Yassir Fathullah, Adian Liusie, Vyas Raina, Vatsal Raina, Mark Gales
-            <br>
-            <span style="font-weight: 500;">BioNLP Workshop @ ACL 2023</span> <a href="https://github.com/potsawee/hierarchical_ensemble_summ" style="color: black">[code]</a>
-            <br>
-            <a href="https://codalab.lisn.upsaclay.fr/competitions/12388#results", style="color:dimgray">→ Best-performing system on the Problem List Summarization shared task</a>
-    </li> -->
-    <!-- <li style="margin-bottom: 15px;">
-            <a href="https://arxiv.org/abs/2307.04172">Can Generative Large Language Models Perform ASR Error Correction?</a>
-            <br>
-            Rao Ma, Mengjie Qian, <strong>Potsawee Manakul</strong>, Mark Gales, Kate Knill
-            <br>
-            arxiv 2023
-    </li> -->
-    <!-- <li style="margin-bottom: 15px;">
-            <a href="https://arxiv.org/abs/2208.13265">Podcast Summary Assessment: A Resource for Evaluating Summary Assessment Methods</a>
-            <br>
-            <u>Potsawee Manakul</u>, Mark Gales
-            <br>
-            <em>arXiv 2022</em>
-            <a href="https://github.com/potsawee/podcast_summary_assessment" style="color: black">[data]</a>
-    </li> -->
-    <li style="margin-bottom: 15px;">
-            <a href="https://aclanthology.org/2021.emnlp-main.739">Sparsity and Sentence Structure in Encoder-Decoder Attention of Summarization Systems</a>
-            <br>
-            <u>Potsawee Manakul</u>, Mark Gales
-            <br>
-            <span style="font-weight: 500;">EMNLP 2021</span> (main)
-            <a href="https://github.com/potsawee/encdec_attn_sparse" style="color: black">[code]</a>
-    </li>
-    <li style="margin-bottom: 15px;">
-            <a href="https://aclanthology.org/2021.acl-long.470/">Long-Span Summarization via Local Attention and Content Selection</a>
-            <br>
-            <u>Potsawee Manakul</u>, Mark Gales
-            <br>
-            <span style="font-weight: 500;">ACL 2021</span> (main)
-            <!-- <a href="https://arxiv.org/abs/2105.03801">[arXiv]</a> -->
-            <a href="https://github.com/potsawee/longsum0" style="color: black">[code]</a>
-            <br>
-            <a href="https://podcastsdataset.byspotify.com/", style="color:dimgray">→ System winning 1st place in the Spotify Podcast Summarisation task 2020</a>
-
-    </li>
-    <!-- <li style="margin-bottom: 15px;">
-            <a href="https://arxiv.org/abs/2012.02535">CUED_SPEECH at TREC 2020 Podcast Summarisation Track</a>
-            <br>
-            <u>Potsawee Manakul</u>, Mark Gales
-            <br>
-            <span style="font-weight: 500;">TREC 2020</span>
-            <a href="https://github.com/potsawee/podcast_trec2020" style="color: black">[code]</a>
-            <br>
-            <a href="https://podcastsdataset.byspotify.com/", style="color:dimgray">→ Won 1st place in the Spotify Podcast Summarisation task 2020</a>
-            <!-- <a href="https://trec.nist.gov/pubs/trec29/papers/cued_speech.P.pdf">[paper]</a> -->
-
-    <!-- </li> -->
-    <li style="margin-bottom: 15px;">
-            <a href="https://www.isca-speech.org/archive/interspeech_2020/manakul20_interspeech.html">Abstractive Spoken Document Summarization using Hierarchical Model with Multi-stage Attention Diversity Optimization</a>
-            <br>
-            <u>Potsawee Manakul</u>, Mark J. F. Gales, Linlin Wang
-            <br>
-            <span style="font-weight: 500;">Interspeech 2020</span>
-            <a href="https://github.com/potsawee/spoken_summ_div" style="color: black">[code]</a>
-            <br>
-            <strong, style="color:dimgray">→ Best Student Paper Award Finalist</strong>
-            <br>
-    </li>
-    <!-- <li style="margin-bottom: 15px;">
-            <a href="https://www.isca-speech.org/archive/slate_2019/lu19_slate.html">Disfluency Detection for Spoken Learner English</a>
-            <br>
-            Yiting Lu, Mark J. F. Gales, Katherine M. Knill, <strong>Potsawee Manakul</strong>, Yu Wang
-            <br>
-            SLaTE workshop at Interspeech 2019
-            <br>
-    </li> -->
-    <li style="margin-bottom: 15px;">
-            <a href="https://www.isca-speech.org/archive/interspeech_2019/lu19b_interspeech.html">Impact of ASR Performance on Spoken Grammatical Error Detection</a>
-            <br>
-            Yiting Lu, Mark J. F. Gales, Katherine M. Knill, <u>Potsawee Manakul</u>, Linlin Wang, Yu Wang
-            <br>
-            <span style="font-weight: 500;">Interspeech 2019</span>
-            <br>
-    </li>
-    <li style="margin-bottom: 15px;">
-            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8683080">Automatic grammatical error detection of non-native spoken learner English</a>
-            <br>
-            Katherine M. Knill, Mark J. F. Gales, <u>Potsawee Manakul</u>, Andrew P. Caines
-            <br>
-            <span style="font-weight: 500;">ICASSP 2019</span>
-            <br>
-    </li>
-</ul>
- <!-- <h2 id="preprints">Preprints</h2> -->
-<!-- <ul> -->
-        <!-- <li style="margin-bottom: 15px;">
-                <a href="https://arxiv.org/abs/2312.13951">Typhoon: Thai Large Language Models</a>
-                <br>
-                Kunat Pipatanakul, Phatrasek Jirabovonvisut, <u>Potsawee Manakul</u>, Sittipong Sripaisarnmongkol, Ruangsak Patomwong, Pathomporn Chokchainant, Kasima Tharnpipitchai
-                <br>
-                <em>arXiv 2023</em>
-                <a href="https://huggingface.co/scb10x/typhoon-7b" style="color: black">[model weights]</a>
-                <br>
-                <strong, style="color:dimgray">→ State-of-the-art open-source Thai LLM in 2023</strong>
-        </li> -->
-
-  <!-- <li style="margin-bottom: 25px;">
-          <a href="pdfs/pm574_thesis_may2019.pdf">Automatic Assessment of English as a Second Language (Grammatical Error Correction and Detection)</a>
-          <br>
-          <strong>Potsawee Manakul</strong>
-          <br>
-          <i>
-          Master's Thesis, Engineering Department, University of Cambridge</i>, 2019
-          <br>
-  </li> -->
-<!-- </ul> -->
-
-<hr />
-<!-- <h2 id="activity">Professional Activities</h2> -->
-<h3 id="honours">Honours and Awards</h3>
-<ul>
-    <li>AACL 2023 Area Chair Paper Award</li>
-    <li>InterSpeech 2020 Best Student Paper Finalist</li>
-    <li>Cambridge International & St John's College Scholarship (2019)</li>
-    <li>BP 1st Year Prize: top 1% in 1st-year Cambridge Engineering (2016)</li>
-    <li>Thai Government Scholarship (2015)</li>
-    <li>Silver Medalist at IPhO 2014; Gold Medalist at APhO 2014</li>
-</ul>
-<h3 id="reviwer">Service</h3>
-<ul>
-    <li>Area Chair: ACL 2025</li>
-    <li>ACL Rolling Review: 2024/02, 2024/04, 2024/06, 2024/10, 2024/12 </li>
-    <li>NeurIPS: 2023, 2024, 2025</li>
-    <li>ICLR: 2024, 2025</li>
-    <li>ICML: 2023, 2024, 2025</li>
-    <li>AAAI: 2025</li>
-    <li>Interspeech: 2023, 2024, 2025</li>
-    <li>Conference On Language Modeling (COLM): 2024, 2025</li>
-    <li>IEEE Transactions on Audio, Speech, and Language Processing: 2022, 2023, 2024, 2025</li>
-</ul>
-<h3 id="teaching">Teaching @ Cambridge</h3>
-<ul>
-    <li>3rd-year Undergraduate Supervision: 3F7 Information Theory and Coding</li>
-    <li>2nd-year Undergraduate Supervision: 2P7 Vector Calculus, Linear Algebra, Probability</li>
-    <li>MPhil in Machine Learning & Machine Intelligence: Introduction to NLP (Lab demonstration)</li>
-    <!-- <li>1st-year Undergraduate: Engineering Lego Lab (Lab demonstration)</li> -->
-</ul>
-
-<hr />
-
-<h2 id="contact">Contact</h2>
-<ul>
-    <li><strong>Email</strong>: potsawee@stanford.edu</li>
-    <!-- <li><strong>Email</strong>: m.potsawee-at-gmail.com</li> -->
-    <!-- <li><strong>Address</strong>: St John's College, St John's Street, Cambridge, CB2 1TP, United Kingdom</li> -->
-</ul>
-
-<hr />
-
-                    <!-- <p style="text-align: center; margin-bottom: 10px"> -->
-                    <!-- <a href="https://github.com/ankitsultana" style="color: dimgray"><small>Page design by Ankit Sultana</small></a> -->
-                    <!-- </p> -->
-
-<!-- Tracking -->
-<a href='https://clustrmaps.com/site/1bjxf'  title='Visit tracker'><img style="height: 0px;width: 0px;  margin-left: auto; margin-right: auto; display: block;" src='https://clustrmaps.com/map_v2.png?cl=bdbdbd&w=180&t=n&d=H9-CpJ0JXgcgvjxD8q_jUzgZnCCW1mLaWsJuJYPoQnE&co=ffffff&ct=333333'/></a>
-            </div>
-    </div>
 
 </body>
 <footer>
