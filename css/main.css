@@ -1,25 +1,302 @@
-html{height:100%;margin:0;padding:0}
-body{margin:0;font-family:"Helvetica Neue";height:100%}a{text-decoration:none;color:#0668E1} /*#0668E1 (blue), #0080FB (light blue) */
-a:hover{text-decoration:underline}
-hr{border:0;height:0;border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px solid rgba(255,255,255,0.3)}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
-#author-name{font-size:30px;color:#272727;display:inline-block}
-.navbar{padding:50px 0 50px 0}.navbar-ul{display:inline-block;margin:0;padding:5px 0 5px 0;margin-left:20px;margin-top:5px}.nav-list{list-style-type:none;margin:0 5px 0 5px}.alignable,.pull-left,.pull-right{display:inline-block}
-.pull-left{float:left}.pull-right{float:right}.container{max-width:700px;margin:auto}.wrapper{min-height:100%}
+body {
+    background-color: #ffffff;
+    color: #111827; /* Dark text for contrast */
+    font-family: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 16.5px;
+    animation: fadeIn 0.8s ease-in-out;
+}
 
-#ins-logo{margin:auto;display:block;max-height:100px;text-align:center}@media (max-width: 800px){.container{max-width:600px;transition:0.3s ease all}}@media (max-width: 650px)
-{.container{max-width:83%}.navbar-ul{margin-top:5px}}@media (max-width: 500px){.navbar{text-align:center;padding:50px 0px 0px 0px}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
-#author-name{width:100%;float:none}
+a {
+    color: #2563eb; /* Vibrant saturated blue for links */
+    text-decoration: none;
+}
 
-#navlist{padding:10px 0 10px 0;margin:0;display:block;float:none;text-align:center;width:100%}
-#navlist li.alignable,#navlist li.pull-left,#navlist li.pull-right{display:inline-block}#navlist li.pull-left{float:none}
-#navlist li.nav-list{margin:0}}.content a:hover{text-decoration:underline}.content ol{counter-reset:list}.content
-ol>li{list-style-position:none;position:relative;list-style:none;margin-top:5px;margin-bottom:5px}.content
-ul>li{margin:5px 0 5px 0}.content ul{padding:0 20px 0 20px}.content ol{padding:0 30px 0 30px}.content ol>li:before{content:"[" counter(list,decimal) "] ";counter-increment:list;position:absolute;left:-30px}.content
-blockquote{border-left:5px solid #333333;margin:20px 0 20px 0;padding:2px 8px 2px 8px;font-style:italic}.content
-.profile-picture{height:175px;width:175px;position:relative;margin:-25px 0 25px 50px;float:right;border-radius:50%}
-p .content .profile-picture{padding:0;margin:0}@media (max-width: 480px){.content .profile-picture img{margin-top:-5px}}.content img{text-align:center;width:100%}table{margin:15px 0;border-collapse:collapse;width:100%;padding:0}
-table tr{border-top:1px solid #cccccc;background-color:white;margin:0;padding:0}
-table tr:nth-child(2n){background-color:#f8f8f8}table tr th{font-weight:bold;border:1px solid #cccccc;text-align:left;margin:0;padding:6px 13px}
-table tr td{border:1px solid #cccccc;text-align:left;margin:0;padding:6px 13px}table tr th :first-child,table tr td :first-child{margin:0}table tr th :last-child,table tr td :last-child{margin:0}
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 800px; /* Constrained fixed width */
+    margin: 0 auto;
+    padding: 60px 20px 80px 20px; /* Generous padding */
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+
+.profile-img-container {
+    flex-shrink: 0;
+}
+
+.profile-picture {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 3px 16px rgba(0,0,0,0.25); /* Slightly stronger shadow */
+}
+
+.header-info h1 {
+    font-size: 32px;
+    margin: -12px 0 4px 0;
+    font-weight: 700;
+    color: #000;
+}
+
+.header-subtitle {
+    font-size: 20px;
+    color: #374151;
+    margin: 0 0 16px 0;
+    font-weight: 400;
+}
+
+.icon-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    text-decoration: none;
+}
+
+.icon-link:hover {
+    transform: scale(1.08); /* Micro-animation */
+    background-color: #374151; /* Lighter charcoal on hover */
+    color: #fff;
+    text-decoration: none;
+}
+
+.icon-text {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+.hf-emoji {
+    filter: grayscale(100%) brightness(2.0);
+}
+
+hr {
+    display: none; /* Hidden, using section titles as dividers now */
+}
+
+.section-title {
+    background-color: #f5f5f5; /* Grey box background */
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+    margin-top: 30px; /* Replaces the hr margin */
+    color: #000; /* Black text instead of blue */
+}
+
+.content-section {
+    margin-bottom: 40px;
+}
+
+.content-section > :not(.section-title) {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.content-section p {
+    margin-bottom: 16px;
+    color: #1f2937;
+}
+
+/* Publications */
+.publication-item {
+    margin-bottom: 24px;
+}
+
+.pub-title {
+    font-weight: 500;
+    font-size: 16px;
+    color: #2563eb;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.pub-authors {
+    color: #111827;
+    font-weight: 500;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.pub-venue {
+    color: #4b5563;
+    font-size: 15px;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.pub-links {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.pub-links a {
+    color: #4b5563;
+    text-decoration: none;
+}
+
+.pub-links a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+.pub-links .paper-emoji {
+    font-style: normal;
+    margin-right: 4px;
+    font-size: 15px; /* Make the emoji/icon larger and more readable next to text */
+    vertical-align: -0.25px; /* Align slightly downward with text */
+}
+
+/* News List */
+.news-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.news-list li {
+    margin-bottom: 12px;
+    color: #1f2937;
+    position: relative;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+.news-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #9ca3af;
+}
+
+.news-date {
+    font-weight: 500;
+    color: #374151; /* Slightly lighter than the main black text to create subtle hierarchy */
+    margin-right: 6px;
+}
+
+.news-list a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: #d1d5db; /* Light grey underline by default */
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.2s ease;
+}
+
+.news-list a:hover {
+    color: inherit;
+    text-decoration-color: #4b5563; /* Darker grey underline on hover */
+}
+
+/* Research Themes */
+.theme-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.theme-list li {
+    margin-bottom: 12px;
+    color: #1f2937;
+    position: relative;
+    padding-left: 15px;
+    font-size: 15.5px;
+}
+
+.theme-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #9ca3af;
+}
+
+.theme-label {
+    font-weight: 700;
+    color: #111827;
+}
+
+.theme-list a {
+    color: #1f2937; /* Same as the paragraph text color, making it look regular */
+    transition: color 0.2s ease;
+}
+
+.theme-list a:hover {
+    color: #2563eb; /* Turns blue on hover */
+}
+
+/* Publication Annotations */
+.pub-annotations {
+    margin-top: 6px;
+    font-size: 14.5px;
+    color: #4b5563;
+    padding-left: 2px;
+}
+
+.pub-annotations div {
+    margin-bottom: 2px;
+}
+
+.pub-annotations a {
+    color: #6b7280;
+    text-decoration: none;
+    transition: color 0.1s ease;
+}
+
+.pub-annotations a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+/* Responsive tweaks */
+@media (max-width: 650px) {
+    .header-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+    .icon-row {
+        justify-content: center;
+    }
+    .profile-picture {
+        width: 180px;
+        height: 180px;
+    }
+}
+
