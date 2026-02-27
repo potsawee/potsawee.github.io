@@ -38,7 +38,8 @@ a:hover {
     align-items: center;
     gap: 50px;
     margin-bottom: 20px;
-    padding-left: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .profile-img-container {
@@ -206,9 +207,10 @@ hr {
 }
 
 .news-date {
+    display: inline-block;
+    width: 84px;
     font-weight: 500;
     color: #374151; /* Slightly lighter than the main black text to create subtle hierarchy */
-    margin-right: 6px;
 }
 
 .news-list a {
