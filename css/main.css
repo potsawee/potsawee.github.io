@@ -286,6 +286,43 @@ hr {
     text-decoration: underline;
 }
 
+/* Thai Name Tooltip */
+.name-tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    border-bottom: 1.5px dashed #6b7280;
+    /* font-weight: 600; */
+}
+
+.name-tooltip-box {
+    visibility: hidden;
+    opacity: 0;
+    width: 300px;
+    background-color: #fff;
+    color: #1f2937;
+    font-size: 13.5px;
+    font-weight: 400;
+    line-height: 1.55;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    padding: 12px 14px;
+    position: absolute;
+    z-index: 100;
+    top: calc(100% + 8px);
+    left: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    transform: translateY(-4px);
+    pointer-events: none;
+}
+
+.name-tooltip:hover .name-tooltip-box {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Responsive tweaks */
 @media (max-width: 650px) {
     .header-section {
@@ -299,6 +336,10 @@ hr {
     .profile-picture {
         width: 180px;
         height: 180px;
+    }
+    .name-tooltip-box {
+        width: 260px;
+        left: -60px; /* Shift it to the left to avoid right edge overflow */
     }
 }
 
